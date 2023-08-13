@@ -1,10 +1,30 @@
 import React from "react";
-// import { Article, Brand, CTA } from "./conponents";
+import "./app.css";
+
+import {
+  Footer,
+  Blog,
+  Possibility,
+  WhatGPT3,
+  Header,
+  Features,
+} from "./containers";
+import { Navbar, Brand, CTA } from "./components";
 
 function App() {
   return (
-    <div>
-      <h1>GPT-3</h1>
+    <div className="App">
+      <div className="gradient__bg">
+        <Navbar />
+        <Header />
+      </div>
+      <Brand />
+      <WhatGPT3 />
+      <Features />
+      <Possibility />
+      <CTA />
+      <Blog />
+      <Footer />
     </div>
   );
 }
